@@ -7,13 +7,17 @@
     <meta name="description" content="Profil profesional Alfin Ardian, freelance videographer and camera operator in Surakarta, Indonesia." />
     <title>Profil Profesional — Alfin Ardian</title>
     <link rel="stylesheet" href="profile.css" />
+    <script src="nav.js" defer></script>
     <script src="profile.js" defer></script>
   </head>
   <body>
     <header class="profile-nav">
       <a class="monogram" href="index.html">AA<span>.</span></a>
-      <nav><a href="index.html" data-id="home">Beranda</a><a href="index.html#work" data-id="work">Portofolio</a><a class="current" href="profile.html" data-id="profile">Profil Profesional</a></nav>
-      <button class="lang-button" type="button" aria-label="Switch language">EN <span>↗</span></button>
+      <nav class="profile-desktop-nav"><a href="index.html" data-id="home">Beranda</a><a href="index.html#work" data-id="work">Portofolio</a><a class="current" href="profile.html" data-id="profile">Profil Profesional</a></nav>
+      <div class="profile-nav-actions"><button class="lang-button" type="button" aria-label="Switch language">EN <span>↗</span></button><button class="mobile-menu-toggle" type="button" aria-expanded="false" aria-controls="profileMobileMenu" aria-label="Buka navigasi">☰</button></div>
+      <nav class="mobile-menu profile-mobile-menu" id="profileMobileMenu" aria-label="Navigasi mobile" hidden>
+        <a href="index.html" data-id="home">Beranda</a><a href="index.html#work" data-id="work">Portofolio</a><a class="current" href="profile.html" data-id="profile">Profil Profesional</a>
+      </nav>
     </header>
     <main class="page">
       <div class="page-top"><span data-id="label">PROFIL PROFESIONAL</span><span>ALFIN ARDIAN <b>·</b> SURAKARTA, INDONESIA</span></div>

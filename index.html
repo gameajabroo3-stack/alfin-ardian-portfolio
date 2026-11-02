@@ -9,6 +9,7 @@
     <title>Alfin Ardian — Videographer Portfolio</title>
     <link rel="preconnect" href="https://img.youtube.com" />
     <link rel="stylesheet" href="styles.css" />
+    <script src="nav.js" defer></script>
     <script src="script.js" defer></script>
   </head>
   <body>
@@ -24,7 +25,14 @@
       <div class="nav-actions">
         <button class="language-toggle" type="button" aria-label="Switch language">EN <span>↗</span></button>
         <a class="nav-contact" href="#contact" data-i18n="navContact">Kontak <span>↗</span></a>
+        <button class="mobile-menu-toggle" type="button" aria-expanded="false" aria-controls="mobileMenu" aria-label="Buka navigasi">☰</button>
       </div>
+      <nav class="mobile-menu" id="mobileMenu" aria-label="Navigasi mobile" hidden>
+        <a href="#work" data-i18n="navWork">Karya</a>
+        <a href="#approach" data-i18n="navApproach">Proses</a>
+        <a href="#about" data-i18n="navAbout">Pengalaman</a>
+        <a href="profile.html" data-i18n="navProfile">Profil</a>
+      </nav>
     </header>
 
     <main>
