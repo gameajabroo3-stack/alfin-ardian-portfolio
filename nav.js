@@ -4,16 +4,22 @@ menuButtons.forEach((button) => {
   const menu = document.getElementById(button.getAttribute("aria-controls"));
   if (!menu) return;
 
+  const labelFor = (open) => {
+    const isEnglish = document.documentElement.lang === "en";
+    if (isEnglish) return open ? "Close navigation" : "Open navigation";
+    return open ? "Tutup navigasi" : "Buka navigasi";
+  };
+
   const closeMenu = () => {
     button.setAttribute("aria-expanded", "false");
-    button.setAttribute("aria-label", "Buka navigasi");
+    button.setAttribute("aria-label", labelFor(false));
     menu.hidden = true;
   };
 
   button.addEventListener("click", () => {
     const isOpen = button.getAttribute("aria-expanded") === "true";
     button.setAttribute("aria-expanded", String(!isOpen));
-    button.setAttribute("aria-label", isOpen ? "Buka navigasi" : "Tutup navigasi");
+    button.setAttribute("aria-label", labelFor(!isOpen));
     menu.hidden = isOpen;
   });
 

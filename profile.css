@@ -14,8 +14,8 @@
   .profile-nav{justify-content:space-between}
   .profile-desktop-nav{display:none!important}
   .mobile-menu-toggle{display:inline-flex;align-items:center;justify-content:center;width:42px;height:42px;border:1px solid var(--line);border-radius:2px;background:transparent;color:var(--ink);font-size:17px;cursor:pointer}
-  .profile-mobile-menu:not([hidden]){display:grid;position:absolute;top:100%;left:0;right:0;z-index:8;background:var(--card);border:1px solid var(--line);box-shadow:0 16px 28px rgba(43,34,32,.12)}
-  .profile-mobile-menu a{display:flex;align-items:center;min-height:48px;padding:0 16px;border-bottom:1px solid var(--line);font:10px var(--mono);letter-spacing:.06em;color:var(--muted)}
+  .profile-nav .profile-mobile-menu:not([hidden]){display:grid;gap:0;position:absolute;top:100%;left:0;right:0;z-index:8;background:var(--card);border:1px solid var(--line);box-shadow:0 16px 28px rgba(43,34,32,.12)}
+  .profile-nav .profile-mobile-menu a{display:flex;align-items:center;min-height:48px;padding:0 16px;border-bottom:1px solid var(--line);font:10px var(--mono);letter-spacing:.06em;color:var(--muted)}
   .profile-mobile-menu a.current,.profile-mobile-menu a:hover,.profile-mobile-menu a:focus-visible{color:var(--accent);background:#f8f0e9}
   .page-top{font-size:8px;line-height:1.5}
   .intro{padding:26px 0;gap:2px}
